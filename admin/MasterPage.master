@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="admin_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width: 990px" border="1px">
+            <tr>
+                <td style="width: 990; height: 150px" colspan="2">
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+                        width="990" height="150">
+                        <param name="movie" value="flash1.swf" />
+                        <param name="quality" value="high" />
+                        <param name="wmode" value="transparent">
+                        <embed src="flash1.swf" quality="high" type="application/x-shockwave-flash" wmode="transparent"
+                            width="990" height="150" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+                    </object>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 30px" >
+                    &nbsp;
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                </td>
+                <td style="height: 30px" >
+                    Welcome Admin Page</td>
+                
+            </tr>
+            <tr>
+                <td style="width: 200px; height: 400px" valign="top">
+                    <center>
+                        <h3>
+                            :: Menu ::</h3>
+                    </center>
+                    <ul>
+                        <li><a href="List_Admin_Master.aspx">Admin Info</a></li>
+                        <li><a href="List Registration.aspx">Registration</a></li>
+                        <li><a href="List RTO test.aspx">RTO Test</a></li>
+                        <li><a href="List Contact_Us.aspx">Contact_Us Info</a></li>
+                        <li><a href="List Feedback.aspx">Feedback</a></li>
+                        <li><a href="List Download.aspx">Download Form</a></li>
+                    </ul>
+                </td>
+                <td style="width: 790px; height: 400px" valign="top">
+                <div style="width:800px; overflow:scroll">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                    
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 990px; height: 60px" colspan="2" align="center">
+                <center>
+                <b>
+                <a href="../Logout.aspx">Logout</a> <br />
+                Developed By: Sheetal & Bhaveeni & Megha & Jinal
+                </b>
+                </center>
+                
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
